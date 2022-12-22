@@ -1,4 +1,4 @@
-import {add, subtract , addNote , removeNote} from './note.js'
+import {add, subtract, addNote, removeNote, listNote, readNote} from './note.js'
 import chalk from 'chalk';
 import validator from 'validator';
 import _yargs from 'yargs';
@@ -37,7 +37,6 @@ const yargs = _yargs(hideBin(process.argv))
 // }
 
 
-
 //******* customize  yargs version ********* //
 yargs.version('1.1.0');
 
@@ -52,14 +51,14 @@ yargs.command({
             demandOption: true,
             type: "string",
         },
-        body:{
+        body: {
             describe: "Note Body",
             demandOption: true,
             type: "string",
         }
     },
     handler: function (argv) {
-       addNote(argv.title,argv.body);
+        addNote(argv.title, argv.body);
     }
 });
 
@@ -67,15 +66,15 @@ yargs.command({
 yargs.command({
     command: "remove",
     describe: "Remove Note",
-    builder:{
-      title:{
-          describe : 'Note Title',
-          demandOption : true,
-          type : 'string',
-      }
+    builder: {
+        title: {
+            describe: 'Note Title',
+            demandOption: true,
+            type: 'string',
+        }
     },
     handler: function (argv) {
-          removeNote(argv.title);
+        removeNote(argv.title);
     }
 });
 
@@ -85,7 +84,7 @@ yargs.command({
     command: "list",
     describe: "List Note",
     handler: function () {
-        console.log('Listing note!');
+        listNote();
     }
 });
 
@@ -94,8 +93,15 @@ yargs.command({
 yargs.command({
     command: "read",
     describe: "read Note",
-    handler: function () {
-        console.log('Reading note!');
+    bulider: {
+        title: {
+            demandOption: true,
+            type: 'string',
+            describe: 'Note Title',
+        }
+    },
+    handler: function (argv) {
+        readNote(argv.title);
     }
 });
 
