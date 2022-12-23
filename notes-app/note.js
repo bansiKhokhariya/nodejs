@@ -1,5 +1,6 @@
-import fs from 'fs';
-import chalk from "chalk";
+
+const  fs = require('fs');
+const  chalk = require('chalk');
 
 const add = function (x, y) {
     return x + y;
@@ -80,7 +81,11 @@ const readNote = (title) => {
 }
 
 
-export {add, subtract, addNote, removeNote, listNote, readNote}
+module.exports = {
+    add, subtract, addNote, removeNote, listNote, readNote
+}
+
+
 
 
     

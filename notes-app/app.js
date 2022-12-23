@@ -1,8 +1,10 @@
-import {add, subtract, addNote, removeNote, listNote, readNote} from './note.js'
-import chalk from 'chalk';
-import validator from 'validator';
-import _yargs from 'yargs';
-import {hideBin} from 'yargs/helpers';
+// import {add, subtract, addNote, removeNote, listNote, readNote} from './note.js'
+
+const  chalk = require('chalk');
+const  validator = require('validator');
+const  yargs = require('yargs');
+const notes = require('./note.js');
+
 
 
 // console.log(add(4, 4));
@@ -24,7 +26,7 @@ import {hideBin} from 'yargs/helpers';
 
 const command = process.argv[2];
 // console.log(process.argv)
-const yargs = _yargs(hideBin(process.argv))
+// const yargs = _yargs(hideBin(process.argv))
 // console.log(yargs.argv);
 
 
@@ -58,7 +60,7 @@ yargs.command({
         }
     },
     handler: function (argv) {
-        addNote(argv.title, argv.body);
+        notes.addNote(argv.title, argv.body);
     }
 });
 
@@ -74,7 +76,7 @@ yargs.command({
         }
     },
     handler: function (argv) {
-        removeNote(argv.title);
+        notes.removeNote(argv.title);
     }
 });
 
@@ -84,7 +86,7 @@ yargs.command({
     command: "list",
     describe: "List Note",
     handler: function () {
-        listNote();
+        notes.listNote();
     }
 });
 
@@ -101,7 +103,7 @@ yargs.command({
         }
     },
     handler: function (argv) {
-        readNote(argv.title);
+        notes.readNote(argv.title);
     }
 });
 
