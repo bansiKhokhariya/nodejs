@@ -1,26 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3da4761-0fbb-440c-a83a-7b1559768dca" name="Changes" comment="commit related to starting weather-app.">
-      <change afterPath="$PROJECT_DIR$/weather-app/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-app/package.json" afterDir="false" />
+    <list default="true" id="d3da4761-0fbb-440c-a83a-7b1559768dca" name="Changes" comment="commit related to some changes.">
+      <change afterPath="$PROJECT_DIR$/task-manager/mongodb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-manager/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-manager/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-manager/src/db/mongoose.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/node_modules/chalk/license" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/node_modules/chalk/license" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/node_modules/chalk/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/node_modules/chalk/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/node_modules/chalk/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/node_modules/chalk/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/node_modules/chalk/source/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/node_modules/chalk/source/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/node_modules/chalk/source/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/node_modules/chalk/source/utilities.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/node_modules/chalk/source/vendor/ansi-styles/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/node_modules/chalk/source/vendor/ansi-styles/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/node_modules/chalk/source/vendor/supports-color/browser.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/node_modules/chalk/source/vendor/supports-color/browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/node_modules/chalk/source/vendor/supports-color/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/node_modules/chalk/source/vendor/supports-color/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/notes-app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +29,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="19.2.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="18.13.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2021.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -66,6 +55,10 @@
       <workItem from="1672287725117" duration="17000" />
       <workItem from="1673238063627" duration="835000" />
       <workItem from="1675662027722" duration="3410000" />
+      <workItem from="1675836237911" duration="9160000" />
+      <workItem from="1675919645480" duration="3690000" />
+      <workItem from="1676003991881" duration="8350000" />
+      <workItem from="1676087915488" duration="1101000" />
     </task>
     <task id="LOCAL-00001" summary="commit related to note-apps read and list.">
       <created>1671706830093</created>
@@ -81,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671788908056</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit related to some changes.">
+      <created>1675836276533</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675836276533</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +102,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit related to note-apps read and list." />
     <MESSAGE value="commit related to starting weather-app." />
-    <option name="LAST_COMMIT_MESSAGE" value="commit related to starting weather-app." />
+    <MESSAGE value="commit related to some changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="commit related to some changes." />
   </component>
 </project>
